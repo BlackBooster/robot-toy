@@ -1,19 +1,19 @@
-require_relative 'lib/initialize'
-require_relative 'lib/table_surface'
+require_relative 'lib/initialize_commander'
+require_relative 'lib/table'
 require_relative 'lib/robot'
-require_relative 'lib/place_position'
-require_relative 'lib/move'
-require_relative 'lib/left'
-require_relative 'lib/position'
-require_relative 'lib/right'
-require_relative 'lib/report'
+require_relative 'lib/commands/place'
+require_relative 'lib/commands/move'
+require_relative 'lib/commands/left'
+require_relative 'lib/commands/position'
+require_relative 'lib/commands/right'
+require_relative 'lib/commands/report'
 
 # initializes table, robot and commands that will be executed
 table = Table.new(5, 5)
 robot = Robot.new
-init_commands = Initialize.new(robot, table)
+init_commands = InitializeCommander.new(robot, table)
 
-puts "Cheers, love! The Cavalry's here!"
+puts "Cheers love! The Cavalry's here!"
 
 loop do
   puts "Type your command (type exit to close): "
