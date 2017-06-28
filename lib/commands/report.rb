@@ -6,8 +6,6 @@ class Report
 
   # creating readable format to robot current position
   def execute
-    if @robot.placed?
-      puts @robot.report
-    end
+    puts @robot.report
   end
 end
