@@ -16,7 +16,7 @@ init_commands = InitializeCommander.new(robot, table)
 puts "Cheers love! The Cavalry's here!"
 
 loop do
-  puts "Type your command (type exit to close): "
+  puts 'Type your command (type exit to close): '
 
   input = gets
 

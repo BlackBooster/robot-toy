@@ -2,7 +2,6 @@ require 'spec_helper'
 require 'commands/position'
 
 describe Position do
-
   describe '#go_to' do
     it 'goes NORTH' do
       position = Position.new(1, 1, 'NORTH')

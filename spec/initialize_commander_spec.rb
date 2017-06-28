@@ -10,7 +10,6 @@ require 'robot'
 require 'table'
 
 describe InitializeCommander do
-
   let(:robot) { Robot.new }
   let(:table) { Table.new(5, 5) }
   let(:initialize_commander) { InitializeCommander.new(robot, table) }

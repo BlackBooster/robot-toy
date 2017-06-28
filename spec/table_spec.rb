@@ -3,9 +3,7 @@ require 'commands/position'
 require 'table'
 
 describe Table do
-
   describe '#position_is_valid?' do
-
     let(:table) { Table.new(5, 5) }
 
     it 'returns true when x and y are valid' do

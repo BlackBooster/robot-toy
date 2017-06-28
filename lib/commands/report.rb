@@ -1,5 +1,4 @@
 class Report
-
   def initialize(robot)
     @robot = robot
   end

@@ -6,9 +6,7 @@ require 'robot'
 require 'table'
 
 describe Move do
-
   describe '#execute' do
-
     let(:robot) { Robot.new }
     let(:table) { Table.new(5, 5) }
     let(:move) { Move.new(robot, table) }

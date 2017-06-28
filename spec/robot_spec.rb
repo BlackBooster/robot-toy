@@ -9,7 +9,6 @@ require 'robot'
 require 'table'
 
 describe Robot do
-
   let(:robot) { Robot.new }
   let(:table) { Table.new(5, 7) }
 
